@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    display: grid;
+    grid-template-areas: 
+    "a a a delete"
+    "b b b b"
+    ;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    border: 1px solid black;
+    width: 208px;
+    padding: 1px;
+    background-color: rgb(159, 225, 252);
+}
+
+#display-settings {
+    grid-area: a;
+    text-align: end;
+    margin: 1px;
+    width: 152px;
+    border: 1px solid black;
+}
+
+#calculus-display {
+    background-color:rgb(255, 165, 0);
+    height: 17px;
+    font-family: fantasy;
+    padding-right: 5px;
+    color: black;
+}
+
+#delete {
+    grid-area: delete;
+    height: 52px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 41, 52);
+    margin-left: 7px;
+}
+
+.material-icons {
+    color: rgb(255, 165, 0);
+    font-size: 40px !important;
+}
+
+.material-icons:hover {
+    color: rgb(230, 158, 65);
+}
+
+#display-last {
+    display: none;
+}
+
+#display-current {
+    background-color: rgb(253, 119, 70);
+    height: 33px;
+    font-size: 28px;
+    font-family: fantasy;
+    vertical-align: middle;
+    line-height: 33px;
+    padding-right: 5px;
+}
+
+#button-grid {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: a;
+}
+
+button {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius:;
+    margin: 1px;
+}
+
+button:hover {
+    background-color:rgb(233, 217, 217);
+}
+
+.btn-operator {
+    background-color:rgb(75, 136, 196);
+}
+
+.btn-operator:hover {
+    background-color: rgb(105, 158, 255);
+}
+
+#decimal {
+    background-color: rgb(75, 136, 196);
+}
+
+#decimal:hover {
+    background-color: rgb(105, 158, 255);
+}
+
+#clear-all {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 102px;
+    background-color: rgb(236, 20, 56); 
+}
+
+#clear-all:hover {
+    background-color: rgb(255, 105, 138);
+}
+
+#equals {
+    grid-column-start: 4;
+    grid-column-end: 4; 
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 102px;
+    background-color: rgb(10, 223, 10);
+}
+
+#equals:hover {
+    background-color: rgb(17, 240, 29);
+}
+
+#number0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 102px;
+}
